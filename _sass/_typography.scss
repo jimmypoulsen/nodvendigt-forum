@@ -1,0 +1,18 @@
+$arial: 'Arial, Helvetica, Helvetica Neue';
+$lato: 'Lato, sans-serif';
+
+.font-arial {
+  font-family: $arial;
+}
+
+.font-lato {
+  font-family: $lato;
+}
+
+h1 {
+  font-family: $arial;
+}
+
+h2, h3, h4, h5, p, span {
+  font-family: $lato;
+}

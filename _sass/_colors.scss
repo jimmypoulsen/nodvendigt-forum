@@ -1,0 +1,18 @@
+$red: #e63127;
+$black: #393939;
+$white: #fefefe;
+$colors: ('red', $red), ('black', $black), ('white', $white);
+
+@each $color in $colors {
+  .text-#{nth($color, 1)} {
+    color: nth($color, 2);
+  }
+
+  .bg-#{nth($color, 1)} {
+    background-color: nth($color, 2);
+  }
+
+  .border-#{nth($color, 1)} {
+    border-color: nth($color, 2);
+  }
+}
