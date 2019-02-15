@@ -14,7 +14,7 @@ layout: default
     <hr class="stroke" />
     <div class="mt-2">
       {% for pub in site.publications %}
-        <a href="{{ pub.url }}">
+        <a href="{{ site.baseurl}}{{ pub.url }}">
           <p class="mt-0 text-center">
             {{ pub.published_date }}<br/>
             {{ pub.title }}
