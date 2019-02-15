@@ -1,0 +1,16 @@
+<div class="navigation">
+  <div class="container">
+    <div class="wrapper">
+      <div class="nav-items">
+        {% assign pages = site.pages | sort: "order" %}
+        {% for page in pages %}
+          {% if page.title %}
+            <div class="item">
+              <a href="{{ page.url | absolute_url }}" class="no-underline">{{ page.title }}</a>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

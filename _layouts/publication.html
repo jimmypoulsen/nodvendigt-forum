@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="wrapper mt-12">
+    <h2 class="text-center mb-2">{{ page.title | escape }}</h2>
+    <hr class="stroke" />
+    <p class="text-center font-bold mt-2">{{ page.published_date | escape }}</p>
+
+    <p class="mt-2">{{ content }}</p>
+
+    <a href="/assets/publications/{{ page.pdf_name }}.pdf" target="_blank"><button class="btn mt-6">Download</button></a>
+  </div>
+</div>

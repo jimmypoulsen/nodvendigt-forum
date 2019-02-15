@@ -3,9 +3,11 @@
 
 @import "colors";
 @import "typography";
+@import "buttons";
+@import "spacing";
 @import "layout";
 
 body {
-  color: $white;
-  background-color: #000;
+  margin: 0;
+  padding: 0;
 }

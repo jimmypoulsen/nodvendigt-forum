@@ -2,6 +2,10 @@
 <html lang="{{ page.lang | default: site.lang | default: "da" }}">
   {% include head.html %}
   <body>
-    Hello motherfucker  
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
   </body>
 </html>

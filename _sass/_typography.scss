@@ -1,5 +1,5 @@
-$arial: 'Arial, Helvetica, Helvetica Neue';
-$lato: 'Lato, sans-serif';
+$arial: Arial, Helvetica, Helvetica Neue;
+$lato: Lato, sans-serif;
 
 .font-arial {
   font-family: $arial;
@@ -11,8 +11,72 @@ $lato: 'Lato, sans-serif';
 
 h1 {
   font-family: $arial;
+  font-size: 25px;
+  color: $red;
 }
 
-h2, h3, h4, h5, p, span {
+h3 {
+  font-size: 15px;
+}
+
+h2,
+h3,
+h4,
+h5,
+p,
+span {
   font-family: $lato;
+  color: $black;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+@media only screen and (min-width: 1000px) {
+  h1 {
+    font-size: 60px !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+  }
+}
+
+// typography helpers
+.font-normal {
+  font-weight: 400 !important;
+}
+.font-light {
+  font-weight: 300 !important;
+}
+.font-semibold {
+  font-weight: 600 !important;
+}
+.font-bold {
+  font-weight: 700 !important;
+}
+.font-italic {
+  font-style: italic !important;
+}
+.no-underline {
+  font-style: normal !important;
+  text-decoration: none !important;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
 }

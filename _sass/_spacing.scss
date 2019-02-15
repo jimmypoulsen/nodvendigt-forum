@@ -1,0 +1,46 @@
+// different margin/padding levels
+$levels: 1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24, 32;
+$sides: ("t", "top"), ("r", "right"), ("b", "bottom"), ("l", "left");
+
+@each $side in $sides {
+  @each $level in $levels {
+    .m#{nth($side, 1)}-#{$level} {
+      margin-#{nth($side, 2)}: #{$level / 4}rem;
+    }
+
+    .p#{nth($side, 1)}-#{$level} {
+      padding-#{nth($side, 2)}: #{$level / 4}rem;
+    }
+  }
+
+  .m#{nth($side, 1)}-0 {
+    margin-#{nth($side, 2)}: 0;
+  }
+
+  .p#{nth($side, 1)}-0 {
+    padding-#{nth($side, 2)}: 0;
+  }
+}
+
+@each $level in $levels {
+  .m-#{$level} {
+    margin: #{$level}px;
+  }
+
+  .p-#{$level} {
+    padding: #{$level}px;
+  }
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}

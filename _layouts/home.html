@@ -1,3 +1,26 @@
 ---
 layout: default
 ---
+
+<div class="container">
+  <div class="wrapper mt-12">
+    <h4 class="text-center mb-2">Fædrelandenes Europa i stedet for Europæisk Union</h4>
+    <hr class="stroke" />
+    <p class="mt-2 text-center">Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper. Lorem Ipsum har ikke alene overlevet fem århundreder, men har også vundet indpas i elektronisk typografi uden væsentlige ændringer. Sætningen blev gjordt kendt i 1960’erne med lanceringen af Letraset-ark, som indeholdt afsnit med Lorem Ipsum, og senere med layoutprogrammer som Aldus PageMaker, som også indeholdt en udgave af Lorem Ipsum.</p>
+  </div>
+
+  <div class="wrapper mt-12">
+    <h4 class="text-center mb-2">Seneste udgivelser</h4>
+    <hr class="stroke" />
+    <div class="mt-2">
+      {% for pub in site.publications %}
+        <a href="{{ pub.url }}">
+          <p class="mt-0 text-center">
+            {{ pub.published_date }}<br/>
+            {{ pub.title }}
+          </p>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
