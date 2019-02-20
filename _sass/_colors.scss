@@ -1,7 +1,7 @@
-$red: #e63127;
+$red: #e74c3c;
 $black: #393939;
 $white: #fefefe;
-$colors: ('red', $red), ('black', $black), ('white', $white);
+$colors: ("red", $red), ("black", $black), ("white", $white);
 
 @each $color in $colors {
   .text-#{nth($color, 1)} {

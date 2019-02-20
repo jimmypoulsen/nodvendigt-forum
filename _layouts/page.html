@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="wrapper mt-24">
+    <h2 class="text-center mb-2">{{ page.title }}</h2>
+    <hr class="stroke" />
+
+    <div class="mt-2">
+      {% if page.title == "Udgivelser" %}
+        {% include publications.html %}
+      {% endif %}
+
+      {{ content }}
+    </div>
+  </div>
+</div>
