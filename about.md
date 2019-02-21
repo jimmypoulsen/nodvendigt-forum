@@ -5,7 +5,7 @@ permalink: /om-os/
 order: 3
 ---
 
-#### Sekretær: Christian Funch
+#### Sekretær: Christian Munch
 
 Skolevej 1, Nustrup, 6500 Vojens
 
@@ -21,7 +21,7 @@ Tlf.: 7566 7383
 
 Mail: lona.friborg@gmail.com
 
-Kasseren kontaktes vedr. medlemskab af foreningen, adresseændringer, modtagelse af bladet mv.
+_Kasseren kontaktes vedr. medlemskab af foreningen, adresseændringer, modtagelse af bladet mv._
 
 #### Kontaktperson: Thorkil Sohn
 

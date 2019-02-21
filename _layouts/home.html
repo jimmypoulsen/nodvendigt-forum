@@ -16,7 +16,6 @@ layout: default
       {% for pub in site.publications | sort: 'date' %}
         <a href="{{ site.baseurl }}{{ pub.url }}">
           <p class="mt-0 text-center">
-            {{ pub.published_date }}<br/>
             {{ pub.title }}
           </p>
         </a>
