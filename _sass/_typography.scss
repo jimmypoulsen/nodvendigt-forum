@@ -9,6 +9,14 @@ $lato: Lato, sans-serif;
   font-family: $lato;
 }
 
+.text-sm {
+  font-size: 0.6rem;
+}
+
+.text-xs {
+  font-size: 0.4rem;
+}
+
 h1 {
   font-family: $arial;
   font-size: 25px;
@@ -23,6 +31,7 @@ h2,
 h3,
 h4,
 h5,
+li,
 p,
 span {
   font-family: $lato;
