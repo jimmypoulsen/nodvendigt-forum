@@ -1,4 +1,5 @@
-{% for pub in site.publications | sort: 'date' %}
+{% assign publications = site.publications | sort 'date' | reverse %}
+{% for pub in publications | sort: 'date' | reverse %}
 
 <a href="{{ site.baseurl }}{{ pub.url }}">
   <p class="mt-0 text-center">
