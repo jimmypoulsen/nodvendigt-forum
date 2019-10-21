@@ -28,6 +28,7 @@ github_username: jekyll
 collections:
   publications:
     output: true
+    future: true
 
 # Build settings
 markdown: kramdown

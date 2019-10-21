@@ -16,7 +16,7 @@ layout: default
     <hr class="stroke" />
     <div class="mt-2">
       {% assign publications = site.publications | sort: 'date' | reverse %}
-      {% for pub in publications limit: 3 %}
+      {% for pub in publications limit: 10 %}
         <a href="{{ site.baseurl }}{{ pub.url }}">
           <p class="mt-0 text-center">
             {{ pub.published_date }}
